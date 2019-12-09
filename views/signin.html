@@ -1,0 +1,57 @@
+﻿<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/views/signin.css">
+<head>
+</head>
+<body>
+    <script>
+        let url = new URL(window.location.href);
+        let searchParams = new URLSearchParams(url.search);
+        if (searchParams.get('errorcode') == 0) {
+            alert('성공적으로 가입되셨습니다!');
+        }
+        if (searchParams.get('errorcode') == 1) {
+            alert('아이디와 비밀번호를 입력해주세요!');
+        }
+        if (searchParams.get('errorcode') == 2) {
+            alert(searchParams.get('id') + '은(는) 이미 존재하는 아이디입니다.');
+        }
+        else if (searchParams.get('errorcode') == 3) {
+            alert('아이디 또는 패스워드가 일치하지 않습니다.');
+        }
+
+        
+    </script>
+
+    
+
+<div class="login-page">
+  <div class="form">
+    <form class="register-form" action="/api/add" method="post">
+      <input type="text" placeholder="아이디" name="id"/>
+      <input type="password" placeholder="비밀번호" name="password"/>
+      <input type="text" placeholder="이름" name="name"/>
+        <input type="text" placeholder="생일" name="birthday" value="YYYY-MM-DD"/>
+      <input type="text" placeholder="이메일" name="email"/>
+     <input type="text" placeholder="주소" name="address" class="address"/>
+       
+      <button>create</button>
+      <p class="message"> 이미 가입하셨다구요? <a href="#"> 로그인 </a></p>
+      <p class="message"> 비밀번호 찾기 <a href="#"> 여기! </a></p>
+    </form>
+
+
+    <form class="login-form" action="/api/verify" method="post">
+      <input type="text" placeholder="아이디" name ="id"/> 
+      <input type="password" placeholder="비밀번호" name ="password"/>
+      <button>login</button>
+      <p class="message" >앗 아직 회원이 아니시라구요? <a id="thing" href="#"> 계정 만들기</a></p>
+      <p class="message">비밀번호를 까먹었다구요? <a href="/api/main"> 비밀번호 찾기 </a></p>
+    </form>
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/views/signinauxiliary.js"></script>
+</body>
+
+</html>

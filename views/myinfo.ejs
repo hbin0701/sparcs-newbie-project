@@ -1,0 +1,97 @@
+﻿<html>
+    <head>
+    </head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../views/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alata|Dancing+Script|Nanum+Pen+Script|Quicksand|Source+Serif+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu|Noto+Serif+KR&display=swap" rel="stylesheet">
+    <body>
+        <nav class="nochange">
+            <div class="logo">
+                <h4> Go-Out-To-Eat </h4>
+             </div>
+
+    
+
+        <ul class="nav-links">
+          <li>
+                 <form method="post" action="/api/thisweek" class="inline">
+		 <input type="hidden" name="user" value=<%= session.user %>>
+		<button type="submit" name="submit_param" value="submit_value" class="link-button" visibility = "hidden"> <div class="zz">이번주 맛집</div>
+		</button> 
+		</form>
+          </li>
+          <li>
+                  <a href="#"> 랭킹 </a>
+          </li>
+           <li>
+                  <a href="#"> 친구 </a>
+          </li>
+
+            <li>
+                  		  <form method="post" action="/api/myinfo" class="inline">
+		 <input type="hidden" name="user" value=<% session.user%>>
+		<button type="submit" name="submit_param" value="submit_value" class="link-button" visibility = "hidden">  <div class="zz">인증하기 </div>
+		</button>
+		</form>
+
+           </li>
+
+    </ul>
+
+    <div class="burger">
+         <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    </nav>
+    
+<link rel="stylesheet" href="/views/style.css">
+    <link rel=stylesheet href="../views/myinfo.css"  />
+    <div class="basic">
+        <div class="photo"><img class="photo1" src="../images/profile/<%= session.image%>" /></div>
+        
+    <div class="photo">
+        </div>
+    <div class="intro">
+        ID: <% for (var i = 0; i < 5; i++) { %> 
+            &nbsp <% } %> 
+        <span class="intronb"><%= session.user %> </span> <br /> <br />
+        이름: <% for (var i = 0; i < 5; i++) { %> 
+            &nbsp <% } %> <span class="intronb"><%= session.name %></span>
+
+    </div>
+     <div class="group">
+        <div class="visited">
+        나의 Go-Out <br /> 횟수는
+      
+            <br /><br /><br />
+           <p class="bg">  12번 </p>
+              </div>
+        <div class="rank">
+        내 등수는
+              <br /><br /><br /><br/ />
+            <p class="bg"> 5등</p>
+             </div>
+        <div class="favourite">
+        나의 최애는
+            <br /><br /><br /><br />
+               <p class="bg"> 비빔밥 </p>
+        </div>
+     </div>
+
+    <div class="displaytext">
+        선택된 음식점:  <div class="rt"></div>
+    </div>
+
+      <div class="map">
+          <img src="../images/map.jpg" />
+      </div>
+           <script src="../views/click.js"> </script>	
+    
+ 
+
+    </div>
+</html> 

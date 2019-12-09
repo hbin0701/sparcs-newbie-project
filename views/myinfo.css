@@ -1,0 +1,112 @@
+.basic {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	height: 400px;
+	width: 400px;
+	z-index: -2;
+}
+
+.displaytext {
+    position: absolute;
+    left: 30px;
+    top: 420px;
+}
+
+.opacity {
+	z-index = -1;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	height: 400px;
+	width: 400px;
+	opacity: 0.5;
+	background-color: dimgray;
+}
+
+.displaytext{
+    font-family: "Nanum MyeongJo", serif;
+}
+
+.map {
+    position: absolute;
+    top: 20px;
+    left: 520px;
+    height: 600px;
+    width: 850px;
+    z-index: 3;
+}
+
+.map img {
+    height: 600px;
+    width: 850px;
+}
+
+.intro {
+    margin-left: 15px;
+	font-family: "Nanum Myeongjo", serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.intronb{
+    font-weight: lighter;
+}
+
+.photo1 {
+	height: 150px;
+	width: 150px;
+	border-radius: 80%;
+	border-color: black;
+	z-index: 0;
+}
+
+.photo {
+	border-radius: 80%;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	height: 150px;
+	width: 150px;
+}
+
+.intro {
+	position: absolute;
+	top: 30px;
+	left: 180px;
+	height: 100px;
+	width: 200px;
+}
+
+.group {
+	position: absolute;
+	top: 185px;
+	left: 20px;
+	height: 200px;
+	width: 362px;
+	display: flex;
+    font-family: "Nanum MyeongJo", serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.bg {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.visited {
+
+	height: 200px;
+	width: 120px;
+}
+
+.favourite {
+	height: 200px;
+	width: 120px;
+}
+
+.rank {
+	height: 200px;
+	width: 120px;
+}

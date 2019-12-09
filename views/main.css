@@ -1,0 +1,102 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif !important;
+}
+
+.chooser th{
+    text-align: center;
+}
+
+.howmany {
+    margin-top: 30px;
+}
+
+section {
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo a:hover{
+    text-decoration: none;
+}
+
+.nochange
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: mediumturquoise;
+    font-family: 'Nanum MyeongJo', serif;
+}
+
+
+
+.logo {
+    color: white;
+    letter-spacing: 5px;
+    font-size: 20px !important;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+
+    .nav-links li:hover {
+        text-decoration: underline;
+    }
+
+.no change ol, ul, dl {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%
+}
+
+.nav-links {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.writing {
+    position: absolute;
+    top: 720px;
+    left: 1500px;
+}
+
+.write {
+    display: inline-block;
+    margin-left: 29px;
+}
+
+
+.nav-links {
+    color: paleturquoise;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px;
+}

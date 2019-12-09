@@ -1,0 +1,31 @@
+{
+  "name": "project_sparcs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie": "^0.4.0",
+    "cookie-parser": "^1.4.4",
+    "cookieparser": "^0.1.0",
+    "cors": "^2.8.5",
+    "ejs": "^2.7.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jade": "^1.11.0",
+    "jquery": "^3.4.1",
+    "json": "^9.0.6",
+    "mongoose": "^5.7.12",
+    "node": "^13.1.0",
+    "nodemon": "^1.19.4",
+    "path": "^0.12.7",
+    "req-flash": "0.0.3",
+    "scrollmagic": "^2.0.7"
+  }
+}

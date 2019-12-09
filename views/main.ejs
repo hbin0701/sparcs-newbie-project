@@ -1,0 +1,161 @@
+﻿<html>
+    <head>
+    </head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../views/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Alata|Dancing+Script|Nanum+Pen+Script|Quicksand|Source+Serif+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu|Noto+Serif+KR&display=swap" rel="stylesheet">
+    <body>
+        <nav class="nochange">
+            <div class="logo">
+                <h4> Go-Out-To-Eat </h4>
+             </div>
+
+	
+
+        <ul class="nav-links">
+          <li>
+                 <form method="post" action="/api/thisweek" class="inline">
+		 <input type="hidden" name="user" value="">
+		<button type="submit" name="submit_param" value="submit_value" class="link-button" visibility = "hidden"> <div class="zz">이번주 맛집</div>
+		</button> 
+		</form>
+          </li>
+          <li>
+                  <a href="#"> 랭킹 </a>
+          </li>
+           <li>
+                  <a href="#"> 친구 </a>
+          </li>
+
+            <li>
+                  		  <form method="post" action="/api/myinfo" class="inline">
+		 <input type="hidden" name="user" value="">
+		<button type="submit" name="submit_param" value="submit_value" class="link-button" visibility = "hidden">  <div class="zz">인증하기 </div>
+		</button>
+		</form>
+
+           </li>
+
+    </ul>
+
+    <div class="burger">
+         <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    </nav>
+    
+<link rel="stylesheet" href="/views/style.css">
+    <section>    
+    <div class="slidershow middle">
+
+    <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+        <input type="radio" name="r" id="r5">
+    <div class="slide s1">
+    <img src="/images/1.jpg" alt="">
+            </div>
+            <div class="slide">
+            <img src="/images/2.jpg" alt="">
+            </div>
+             <div class="slide">
+             <img src="/images/3.jpg" alt="">
+            </div>
+              <div class="slide">
+               <img src="/images/4.jpg" alt="">
+            </div>
+               <div class="slide">
+               <img src="/images/5.jpg" alt="">
+            </div>
+            </div>
+
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                 <label for="r5" class="bar"></label>
+           </div> 
+        </div>
+        </section>
+
+       <%
+
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+            var yyyy = today.getFullYear();
+
+            today = "" + yyyy + "년 " + mm + '월 ' + dd + '일';
+        %>
+
+        <section>
+
+        <div class="letter2">
+            <div class= "smallbox">
+            <a href="#"> <p align="center" class="zxc"> [<%- today %>] 오늘의 맛집추천은? </p> </a>
+            </div>
+            
+                <div class="smallbox">
+                </div>
+                <div class="emptybox">
+                </div>
+
+            <div class="tinybox">
+            <div class="tinytitle"> <a href="#" class="zxc"> 이번 주 친구랭킹</a> </div>
+			 <hr />
+                <div class="friend" id = "1">1. 김철수 </div>
+                <div class="friend" id = "2">2. 김철수 </div>
+                <div class="friend" id = "3">3. 김철수 </div>
+                <div class="friend" id = "4">4. 김철수 </div>
+                <div class="friend" id = "5">5. 김철수 </div>
+            </div>
+
+            <div class="tinybox2">
+            <div class="tinytitle"><a href="#"class="zxc"> 이번 주 맛집랭킹</a> </div>
+			 <hr />
+                <div class="friend" id = "1">1. 김철수 </div>
+                <div class="friend" id = "2">2. 김철수 </div>
+                <div class="friend" id = "3">3. 김철수 </div>
+                <div class="friend" id = "4">4. 김철수 </div>
+                <div class="friend" id = "5">5. 김철수 </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <img src="/images/download.jpg" alt="img" class="image" />
+                <div class="overlay overlayFade">
+                    <div class="text"> 한식</div>
+                </div>
+            </div>
+            <div class="container c2">
+                <img src="/images/download1.jpg" alt="img" class="image" />
+                <div class="overlay overlayFade">
+                    <div class="text">  양식</div>
+                </div>
+            </div>
+            <div class="container c3">
+                <img src="/images/download2.jpg" alt="img" class="image" />
+                <div class="overlay overlayFade">
+                    <div class="text">  중식</div>
+                </div>
+            </div>
+             <div class="container">
+                <img src="/images/download3.jpg" alt="img" class="image" />
+                <div class="overlay overlayFade">
+                    <div class="text">  일식</div>
+                </div>
+            </div>        
+            </section>
+       </body>
+
+</html>
+
